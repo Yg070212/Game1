@@ -1,4 +1,7 @@
 ﻿  Source.c
-C:\Users\양현규\Desktop\Game1\Source.c(5,2): warning C4013: 'WriteLine'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-Source.obj : error LNK2019: WriteLinemain 함수에서 참조되는 확인할 수 없는 외부 기호
-C:\Users\양현규\Desktop\Game1\x64\Debug\Game1.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(20,6): warning C4101: 'Player' :참조되지 않은 지역 변수입니다.
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(21,6): warning C4101: 'AI' :참조되지 않은 지역 변수입니다.
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(6,1): warning C4716: 'Player': 값을 반환해야 합니다.
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(11,1): warning C4716: 'AI': 값을 반환해야 합니다.
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(36,1): error C4700: 초기화되지 않은 'PlayerChoice' 지역 변수를 사용했습니다.
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(36,1): error C4700: 초기화되지 않은 'AIChoice' 지역 변수를 사용했습니다.
