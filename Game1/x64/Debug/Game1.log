@@ -1,7 +1,9 @@
 ﻿  Source.c
-C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(20,6): warning C4101: 'Player' :참조되지 않은 지역 변수입니다.
-C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(21,6): warning C4101: 'AI' :참조되지 않은 지역 변수입니다.
-C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(6,1): warning C4716: 'Player': 값을 반환해야 합니다.
-C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(11,1): warning C4716: 'AI': 값을 반환해야 합니다.
-C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(36,1): error C4700: 초기화되지 않은 'PlayerChoice' 지역 변수를 사용했습니다.
-C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(36,1): error C4700: 초기화되지 않은 'AIChoice' 지역 변수를 사용했습니다.
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(12,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(19,9): warning C4473: 'scanf': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+  C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(19,9):
+  자리 표시자 및 해당 매개 변수에는 variadic 인수가 1개 필요하지만 0개가 제공되었습니다.
+  C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(19,9):
+  누락된 variadic 인수 1이(가) 서식 문자열 '%d'에 필요합니다.
+  
+C:\Users\양현규\Desktop\겜프\Github\Game1\Source.c(19,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
