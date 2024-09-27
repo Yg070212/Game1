@@ -35,7 +35,7 @@ int main(void)
 				result[0]++;
 			}
 			else if (((Player == 1 && Com == 3) ||
-				(Player == 2 && Com == 1) ||
+				(Player == 2 && Com == 1) ||	
 				(Player == 3 && Com == 2)))
 			{
 				printf("플레이어가 승리하였습니다!\n\n");
