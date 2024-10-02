@@ -5,12 +5,9 @@
 
 void Position(int x, int y)
 {
-	COORD coord;
+	COORD position = {x, y};
 
-	coord.X = x;
-	coord.Y = y;
-
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
 }
 
 void textcolor(int colorNum)
@@ -85,27 +82,29 @@ int main(void)
 
 			if (Com == Player)
 			{
+				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				textcolor(13);
-				printf("무승부!\n"); 
-				Position(80, -36);
+				printf("무승부!");
 				result[0]++;
 			}
 			else if (((Player == 1 && Com == 3) ||
 				(Player == 2 && Com == 1) ||	
 				(Player == 3 && Com == 2)))
 			{
+				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				textcolor(11);
-				printf("플레이어가 승리하였습니다!\n\n");
-				Position(80, -36);
+				printf("플레이어가 승리하였습니다!");
+				Position(80, 0);
 				result[1]++;
 			}
 			else if (((Com == 1 && Player == 3) ||
 				(Com == 2 && Player == 1) ||
 				(Com == 3 && Player == 2)))
 			{
+				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				textcolor(12);
-				printf("플레이어가 패배하였습니다!\n\n");
-				Position(80, -36);
+				printf("플레이어가 패배하였습니다!");
+				Position(80, 0);
 				result[2]++;
 			}
 		}
