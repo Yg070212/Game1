@@ -47,6 +47,7 @@ int main(void)
 	while (Player != -1)
 	{
 		textcolor(14);
+		Position(0, 0);
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n");
 		printf("                               ________________________________________________________________________________________________________________________________________ \n");
 		printf("                              |                                                                                                                                        |\n");
@@ -82,38 +83,41 @@ int main(void)
 
 			if (Com == Player)
 			{
-				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				textcolor(13);
-				printf("무승부!");
+				Position(0, 36);
+				printf("                                                                                          무승부!");
 				result[0]++;
+
 			}
 			else if (((Player == 1 && Com == 3) ||
 				(Player == 2 && Com == 1) ||	
 				(Player == 3 && Com == 2)))
 			{
-				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				textcolor(11);
-				printf("플레이어가 승리하였습니다!");
-				Position(80, 0);
+				Position(0, 36);
+				printf("                                                                                 플레이어가 승리 하였습니다!");
 				result[1]++;
+
 			}
 			else if (((Com == 1 && Player == 3) ||
 				(Com == 2 && Player == 1) ||
 				(Com == 3 && Player == 2)))
 			{
-				printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 				textcolor(12);
-				printf("플레이어가 패배하였습니다!");
-				Position(80, 0);
+				Position(0, 36);
+				printf("                                                                                 플레이어가 패배 하였습니다!");
 				result[2]++;
+
 			}
 		}
 		else
 		{
 			textcolor(4);
-			printf("잘못된 입력입니다. 1, 2, 3 중 하나를 입력해주세요!\n");
+			Position(0, 36);
+			printf("                                                                      잘못된 입력입니다. 1, 2, 3 중 하나를 입력해주세요!\n");
 			Com = rand() % 3 + 1;
 			textcolor(14);
+			Position(0, 0);
 			printf("\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			printf("                               ________________________________________________________________________________________________________________________________________ \n");
 			printf("                              |                                                                                                                                        |\n");
@@ -148,6 +152,8 @@ int main(void)
 	printf("                   승리 : %d회\n", result[1]);
 	textcolor(12);
 	printf("                   패배 : %d회\n", result[2]);
+
+	system("pause");
 
 	return 0;
 }
