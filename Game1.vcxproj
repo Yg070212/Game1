@@ -24,6 +24,7 @@
     <ProjectGuid>{16e70312-9def-4cf3-92c1-ade50d2d80c2}</ProjectGuid>
     <RootNamespace>Game1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>R.S.P Game</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -114,7 +114,8 @@ int main(void)
 		{
 			textcolor(4);
 			Position(0, 36);
-			printf("                                                                      잘못된 입력입니다. 1, 2, 3 중 하나를 입력해주세요!\n");
+			printf("                                                                     잘못된 입력입니다. 1, 2, 3 중 하나를 입력해주세요!\n");
+			
 			Com = rand() % 3 + 1;
 			textcolor(14);
 			Position(0, 0);
@@ -138,6 +139,7 @@ int main(void)
 			textcolor(14);
 			printf("                                                                      이 중 하나를 선택하세요! 가위(1), 바위(2), 보(3) \n");
 			printf("                                                                      =>");
+			
 			scanf_s("%d", &Player);
 
 			getchar();
